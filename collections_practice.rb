@@ -23,9 +23,10 @@ def kesha_maker(array)
 end
 
 def find_a(collection)
-  i = 0
+  i = 0 
   while i < collection.length
     return collection[i] if yield(collection[i])
+  end
 end
 
 def sum_array(array)
