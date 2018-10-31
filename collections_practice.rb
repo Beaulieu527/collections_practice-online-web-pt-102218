@@ -19,7 +19,14 @@ def reverse_array(array)
   array.reverse
 end
 
-def kesha_maker(array)
+def kesha_maker(collection)
+  i = 0
+  while i < collection.length
+    yield(collection[i])
+    i = i + 1
+  end
+  collection
+end
 end
 
 def find_a(collection)
