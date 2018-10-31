@@ -19,7 +19,7 @@ def reverse_array(array)
   array.reverse
 end
 
-def kesha_maker(collection)
+def kesha_maker(array)
   array.each do |i|
     i[2]= "$"
   end
