@@ -21,12 +21,11 @@ end
 
 def kesha_maker(collection)
   i = 0
-  while i < collection.length
-    yield(collection[i])
-    i = i + 1
+    while i < collection.length
+      return collection[i] if yield(collection[i])
+      i = i + 1
+    end
   end
-  collection
-end
 
 def find_a(collection)
   i = 0
