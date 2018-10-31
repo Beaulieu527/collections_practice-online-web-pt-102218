@@ -29,10 +29,10 @@ def kesha_maker(collection)
 
 def find_a(array)
   array.select {|i| i.start_with?("a") }
-  end
+end
 
 def sum_array(array)
-  @array.each { |i| @sum += i }
+  array.inject(:+)
 end
 
 def add_s(array)
