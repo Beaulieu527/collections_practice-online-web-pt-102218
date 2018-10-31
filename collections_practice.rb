@@ -27,12 +27,8 @@ def kesha_maker(collection)
     end
   end
 
-def find_a(collection)
-  i = 0
-    while i < collection.length
-      return collection[i] if yield(collection[i])
-      i = i + 1
-    end
+def find_a(array)
+  array.select {|i| i.start_with?("a") }
   end
 
 def sum_array(array)
