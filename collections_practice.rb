@@ -22,7 +22,10 @@ end
 def kesha_maker(array)
 end
 
-def find_a(array)
+def find_a(collection)
+  i = 0 
+  while i < collection.length
+    return collection[i] if yield(collection[i])
 end
 
 def sum_array(array)
