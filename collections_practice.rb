@@ -36,8 +36,7 @@ def find_a(collection)
   end
 
 def sum_array(array)
-  sum = 0
-  array.each { |a| sum+=a }
+  array.each { |i| sum += i }
 end
 
 def add_s(array)
