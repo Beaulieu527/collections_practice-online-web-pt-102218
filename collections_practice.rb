@@ -29,9 +29,10 @@ def find_a(collection)
       i = i + 1
     end
   end
-  
+
 def sum_array(array)
-  array.sum
+  sum = 0
+  array.each { |a| sum+=a }
 end
 
 def add_s(array)
