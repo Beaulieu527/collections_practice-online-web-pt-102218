@@ -22,10 +22,11 @@ end
 def kesha_maker(array)
 end
 
-def find_a(collection)
+def find_a(array)
   i = 0
-  while i < collection.length
-    return collection[i] if yield(collection[i])
+  while i < array.length
+    return array[i] if yield(array[i])
+    i+=1
   end
 end
 
