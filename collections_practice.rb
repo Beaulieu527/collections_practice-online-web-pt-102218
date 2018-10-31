@@ -20,11 +20,9 @@ def reverse_array(array)
 end
 
 def kesha_maker(collection)
-  i = 0
-    while i < collection.length
-      return collection[i] if yield(collection[i])
-      i = i + 1
-    end
+  array.each do |i|
+    i[2]= "$"
+  end
   end
 
 def find_a(array)
