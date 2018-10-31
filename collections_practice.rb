@@ -27,7 +27,6 @@ def kesha_maker(collection)
   end
   collection
 end
-end
 
 def find_a(collection)
   i = 0
