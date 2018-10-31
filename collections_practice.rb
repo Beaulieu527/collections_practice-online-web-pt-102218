@@ -29,6 +29,7 @@ def find_a(collection)
       i = i + 1
     end
   end
+  
 def sum_array(array)
   array.sum
 end
